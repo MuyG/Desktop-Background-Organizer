@@ -1,0 +1,87 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body{
+     background: #f5f5ff
+}
+
+label{
+     position: fixed;
+     width: 100%;
+     text-align: center;
+     font-family: 'Rubik Mono One', sans-serif;
+     font-size: 12px;
+     top: 10px;
+     z-index: 10
+}
+
+#fillerTop{
+     width: 100%;
+     height: 5px;
+}
+
+#fillerBottom{
+     width: 100%;
+     height: 75px;
+}
+
+#labelCreator{
+     position: fixed;
+     z-index: 10;
+     text-align: center;
+     top: 35px;
+     left: 50%;
+     transform: translate(-50%);
+     height: 40px;
+     width: 300px;
+     color: rbg(220,220,220);
+     font-family: 'Rubik Mono One', sans-serif;
+     border: 2px solid black;
+     background-color: rgba(0,0,0,0);
+}
+
+#grid{
+     display: flex;
+     justify-content: start;
+     flex-wrap: wrap;
+}
+
+.cell {
+     display: flex;
+     margin: 0;
+     background-color: rgba(0,0,0,0);
+     text-align: center;
+     align-items: center;
+}
+
+.label{
+     position: absolute;
+     z-index: 100;
+     color: rbg(220,220,220);
+     font-family: 'Rubik Mono One', sans-serif;
+     font-size: 20px;
+     cursor: pointer;
+}
+
+.UI{
+    visibility: visible;
+}
